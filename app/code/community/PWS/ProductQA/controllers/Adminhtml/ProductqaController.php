@@ -9,7 +9,7 @@ class PWS_ProductQA_Adminhtml_ProductqaController extends Mage_Adminhtml_Control
     {                
         $this->loadLayout();
 
-        $this->_setActiveMenu('customer/pws_productqa');
+        $this->_setActiveMenu('catalog/pws_productqa');
         $this->_addBreadcrumb(Mage::helper('pws_productqa')->__('Manage Product Questions'), Mage::helper('pws_productqa')->__('Manage Product Questions'));
         $this->_addContent($this->getLayout()->createBlock('pws_productqa/adminhtml_productqa_list'));
 
@@ -66,7 +66,7 @@ class PWS_ProductQA_Adminhtml_ProductqaController extends Mage_Adminhtml_Control
         Mage::register('productqa', $record);
         Mage::register('current_productqa', $record);
 
-        $this->_setActiveMenu('customer/pws_productqa');
+        $this->_setActiveMenu('catalog/pws_productqa');
         $this->_addBreadcrumb(Mage::helper('pws_productqa')->__('Manage Product Question and Answers'), Mage::helper('pws_productqa')->__('Manage Product Question and Answers'));
 
         $this->_addContent($this->getLayout()->createBlock('pws_productqa/adminhtml_productqa_edit'));
