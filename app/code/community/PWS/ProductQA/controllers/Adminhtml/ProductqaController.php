@@ -87,6 +87,7 @@ class PWS_ProductQA_Adminhtml_ProductqaController extends Mage_Adminhtml_Control
                 $record_data = $this->getRequest()->getPost('record');
                 
                 $recordModel->setAnswer($record_data['answer']);   
+                $recordModel->setStatus($record_data['status']);
                 $recordModel->setAnsweredOn($answeredOnDate);         
                 $recordModel->save();
              
