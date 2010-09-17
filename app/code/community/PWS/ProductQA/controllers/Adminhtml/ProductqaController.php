@@ -108,12 +108,11 @@ class PWS_ProductQA_Adminhtml_ProductqaController extends Mage_Adminhtml_Control
                         'date_posted' => Mage::helper('core')->formatDate($recordModel->getCreatedOn(), 'long'), 
                     ); 
 		            $result = $this->sendEmail($emailData);
-		        }
-		        
-		        if(!$result) {
-		            Mage::throwException($this->__('Cannot send email'));
-		        }
-                               
+		            
+		            if(!$result) {
+		                Mage::throwException($this->__('Cannot send email'));
+		            }
+		        }                               
          
                 Mage::getSingleton('adminhtml/session')->addSuccess(Mage::helper('pws_productqa')->__('The record has been successfully saved'));
                 Mage::getSingleton('adminhtml/session')->setRecordData(false);
