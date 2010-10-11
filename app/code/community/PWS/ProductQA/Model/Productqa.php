@@ -12,8 +12,7 @@ class PWS_ProductQA_Model_Productqa extends Mage_Core_Model_Abstract
         $collection = $this->getCollection()
                             ->joinProducts()
                             ->joinStore()
-                            ->addFieldToFilter('productqa_id', $id)
-                      ;
+                            ->addFieldToFilter('productqa_id', $id);
         
         if ($collection->getSize()) {
             return $collection->getFirstItem();

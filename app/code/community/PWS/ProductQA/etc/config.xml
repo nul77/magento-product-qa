@@ -2,7 +2,7 @@
 <config>
     <modules>
         <PWS_ProductQA>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </PWS_ProductQA>
     </modules>        
     <frontend>
@@ -151,6 +151,11 @@
                     <file>pws_productqa/product_qa_answer.html</file>
                     <type>html</type>
                 </product_qa_answer>
+                <product_qa_notification translate="label" module="pws_productqa">
+                    <label>Product QA Notification</label>
+                    <file>pws_productqa/product_qa_notification.html</file>
+                    <type>html</type>
+                </product_qa_notification>
             </email>
         </template>    		
     </global>

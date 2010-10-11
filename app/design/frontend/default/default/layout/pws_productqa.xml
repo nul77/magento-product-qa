@@ -9,18 +9,5 @@
         </reference>
     </catalog_product_view>
 	
-	<!--<guestbook_index_index>
-		<reference name="root">
-            <action method="setTemplate"><template>page/2columns-left-cms.phtml</template></action>
-        </reference>
-        <reference name="head">
-        	<action method="addCss"><stylesheet>css/pws_guestbook.css</stylesheet></action>
-        </reference>
-		<reference name="content">
-		    <block type="pws_guestbook/list" name="guestbook.list" template="pws_guestbook/list.phtml" >
-		        <block type="core/template" name="guestbook.form" as="guestbookForm" template="pws_guestbook/form.phtml"/>
-		    </block>
-		</reference>
-	</guestbook_index_index> -->
 	
 </layout>

@@ -3,7 +3,9 @@ class PWS_ProductQA_Adminhtml_ProductqaController extends Mage_Adminhtml_Control
 {
     const XML_PATH_EMAIL_PRODUCT_QUESTION_IDENTITY  = 'default/pws_productqa/emails/email_identity';
 	const XML_PATH_EMAIL_PRODUCT_QUESTION_TEMPLATE  = 'product_qa_answer';
+		
     const CONFIG_SEND_USER_EMAIL = 'pws_productqa/general/send_email';
+    
     
     public function indexAction()
     {                
@@ -91,7 +93,9 @@ class PWS_ProductQA_Adminhtml_ProductqaController extends Mage_Adminhtml_Control
                 $recordModel->setAnsweredOn($answeredOnDate);         
                 $recordModel->save();
              
-                //send email
+             
+                // --------------------- SEND EMAIL TO POSTER
+                
                 $sendEmailToPoster = Mage::getStoreConfig(self::CONFIG_SEND_USER_EMAIL);
                 
                 if ($sendEmailToPoster) {                
