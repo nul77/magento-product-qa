@@ -2,9 +2,9 @@
 <config>
     <modules>
         <PWS_ProductQA>
-            <version>0.1.1</version>
+            <version>0.1.2</version>
         </PWS_ProductQA>
-    </modules>        
+    </modules>
     <frontend>
         <routers>
             <productqa>
@@ -34,7 +34,7 @@
     </frontend>
     <admin>
 		<routers>
-			<adminhtml>			
+			<adminhtml>
 				<args>
 					<modules>
 	 					<PWS_ProductQA before="Mage_Adminhtml">PWS_ProductQA_Adminhtml</PWS_ProductQA>
@@ -42,7 +42,7 @@
 					<frontName>productqa</frontName>
 				</args>
 			</adminhtml>
-		</routers>		
+		</routers>
    </admin>
    <adminhtml>
    		<translate>
@@ -65,10 +65,10 @@
             <catalog>
                 <children>
                     <pws_productqa translate="title" module="pws_productqa">
-                        <title>Product Q and A</title>    
-                        <action>adminhtml/productqa/</action> 
-                        <sort_order>120</sort_order>                     
-                    </pws_productqa>                    
+                        <title>Product Q and A</title>
+                        <action>adminhtml/productqa/</action>
+                        <sort_order>120</sort_order>
+                    </pws_productqa>
                 </children>
              </catalog>
         </menu>
@@ -79,14 +79,14 @@
                         <catalog>
                             <children>
                                 <pws_productqa translate="title" module="pws_productqa">
-                                    <title>ProductQA</title>                                    
+                                    <title>ProductQA</title>
                                 </pws_productqa>
                             </children>
                         </catalog>
                         <system>
 		                    <children>
 		                        <config>
-		                            <children>		                            	
+		                            <children>
 		                                <pws_productqa translate="title" module="pws_productqa">
 		                                    <title>ProductQA Section</title>
 		                                </pws_productqa>
@@ -99,7 +99,7 @@
             </resources>
         </acl>
     </adminhtml>
-    <global> 
+    <global>
 		<models>
 			<pws_productqa>
 				<class>PWS_ProductQA_Model</class>
@@ -111,7 +111,7 @@
 		            <productqa>
 		                <table>pws_productqa</table>
 		            </productqa>
-            	</entities>            	  
+            	</entities>
         	</pws_productqa_mysql4>
 		</models>
 		<resources>
@@ -132,13 +132,13 @@
 				<connection>
 					<use>core_read</use>
 				</connection>
-			</pws_productqa_read>    
+			</pws_productqa_read>
    		</resources>
-		<blocks>     
+		<blocks>
 			  <pws_productqa>
 			  	 <class>PWS_ProductQA_Block</class>
-			  </pws_productqa>	
-		</blocks>   	
+			  </pws_productqa>
+		</blocks>
 		<helpers>
 			<pws_productqa>
 				<class>PWS_ProductQA_Helper</class>
@@ -157,7 +157,7 @@
                     <type>html</type>
                 </product_qa_notification>
             </email>
-        </template>    		
+        </template>
     </global>
     <default>
         <pws_productqa>
@@ -165,5 +165,5 @@
             	<email_identity>general</email_identity>
             </emails>
         </pws_productqa>
-    </default>  
+    </default>
 </config>
